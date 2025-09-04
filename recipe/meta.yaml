@@ -1,5 +1,5 @@
 {% set name = "cron-descriptor" %}
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cron_descriptor-{{ version }}.tar.gz
-  sha256: 443ccd21a36a7fc9464a42472199cbdbc0d86b09021af1a8dd1595e4c391d85e
+  sha256: e39d2848e1d8913cfb6e3452e701b5eec662ee18bea8cc5aa53ee1a7bb217157
 
 build:
   noarch: python
