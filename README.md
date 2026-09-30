@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cron-descriptor` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install cron-descriptor
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install cron-descriptor
 ```
 
-It is possible to list all of the versions of `cron-descriptor` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add cron-descriptor
+# for installing globally
+pixi global install cron-descriptor
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `cron-descriptor` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search cron-descriptor --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search cron-descriptor --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search cron-descriptor --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds cron-descriptor --channel conda-forge
 # List dependencies of `cron-descriptor`:
 mamba repoquery depends cron-descriptor --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
