@@ -1,5 +1,5 @@
 {% set name = "cron-descriptor" %}
-{% set version = "2.3.4" %}
+{% set version = "2.3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/cron_descriptor-{{ version }}.tar.gz
-  sha256: a207332100330adfbdd9cbb685d7c246f53797fa932f8450410b3f38aa89b4b5
+  sha256: 63fe96544d8a7fe6d6e655b87abc3cbac9e76fd404fb9834c3fc2696d2e665fd
 
 build:
   noarch: python
